@@ -5,10 +5,10 @@ import Background from '~/components/Background';
 
 // import { Container } from './styles';
 
-export default function SignUp() {
+export default function SignIn() {
   return (
     <Background>
-      <Text>SignUp</Text>
+      <Text>SignIn</Text>
     </Background>
   );
 }
