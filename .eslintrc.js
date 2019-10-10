@@ -49,4 +49,11 @@ module.exports = {
       { argsIgnorePattern: '^_' }
     ]
   },
+  settings: {
+    'import/resolver': {
+      "babel-plugin-root-import": {
+        rootPathSuffix: "src"
+      }
+    }
+  }
 };
