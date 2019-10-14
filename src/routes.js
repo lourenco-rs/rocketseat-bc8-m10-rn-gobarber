@@ -1,5 +1,6 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
+import { Platform } from 'react-native';
 
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
@@ -21,7 +22,8 @@ export default isSigned =>
           },
           {
             tabBarOptions: {
-              keyboardHidersTabBar: true,
+              keyboardHidesTabBar: Platform.OS === 'ios',
+
               activeTintColor: '#FFF',
               inactiveTintColor: 'rgba(255, 255, 255, 0.6)',
               style: {
