@@ -23,6 +23,8 @@ export default function Confirm({ navigation }) {
       provider_id: provider.id,
       date: time,
     });
+
+    navigation.navigate('Dashboard');
   }
 
   return (
